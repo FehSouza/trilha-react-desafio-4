@@ -34,7 +34,7 @@ const Login = () => {
           <Spacing />
           <Input name="password" type="password" placeholder="Senha" control={control} errorMessage={errors?.password?.message} />
           <Spacing />
-          <Button title="Entrar" />
+          <Button title="Entrar" isValid={isValid} />
         </Column>
       </LoginContainer>
     </Container>

@@ -7,9 +7,20 @@ export const ButtonContainer = styled.button`
   color: #fff;
   border: 1px solid #81259d;
   border-radius: 21px;
+  transition-duration: 350ms;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #696969;
+    border: 1px solid #696969;
+    cursor: not-allowed;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 
   &:hover {
-    opacity: 0.6;
-    cursor: pointer;
+    opacity: 0.8;
   }
 `
